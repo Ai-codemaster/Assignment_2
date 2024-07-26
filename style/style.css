@@ -26,7 +26,6 @@
     margin: 0 auto;
     background: linear-gradient(180deg, rgba(17,17,17,1) 10%, rgba(28,28,28,1) 50%, rgba(17,17,17,1) 90%);
     border: 1px solid;
-    position: relative;
 }
 
 .nev_section{
@@ -127,6 +126,10 @@
     margin-left: 1rem;
 }
 
+.image_section{
+    position: relative;
+}
+
 .box_1{
     width: 200px;
     height: 100px;
@@ -136,8 +139,8 @@
     border-radius: .75rem;
     text-align: center;
     position: absolute;
-    right: 13%;
-    top: 37%;
+    right: -22%;
+    top: 21%;
 }
 
 .box_1 h2{
@@ -167,8 +170,8 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 31%;
-    top: 77%;
+    left: -33%;
+    bottom: 11%;
 }
 
 .box_2 .circle{
@@ -190,4 +193,45 @@
     font-weight: 400;
     letter-spacing: 1px;
     color: var(--text_2);
+}
+
+
+
+/* responsive part */
+
+@media screen and (max-width: 1300px) {
+    .box_1{
+        width: 190px;
+        right: -8%;
+        top: 13%;
+    }
+
+    .box_2{
+        left: -5%;
+        bottom: 11%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero_section{
+        flex-direction: column;
+    }
+
+    .text_section{
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .logo{
+        font-size: 2rem;
+    }
+
+    .navbar ul{
+        gap: .75rem;
+    }
+
+    .navbar ul li a{
+        font-size: .9rem;
+    }
 }
