@@ -12,6 +12,10 @@
     list-style: none;
 }
 
+/* html{
+    background: rgba(17,17,17,1);
+} */
+
 :root{
     --main_color: rgb(230, 83, 60);
     --text_1: rgb(255, 255, 255);
@@ -25,7 +29,7 @@
     height: auto;
     margin: 0 auto;
     background: linear-gradient(180deg, rgba(17,17,17,1) 10%, rgba(28,28,28,1) 50%, rgba(17,17,17,1) 90%);
-    border: 1px solid;
+    border: 1px solid rgba(17,17,17,1);
 }
 
 .nev_section{
@@ -38,9 +42,18 @@
 
 .logo{
     color: var(--main_color);
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: 800;
     text-align: left;
+}
+
+.menu_icon{
+    position: absolute;
+    right: 3%;
+    top: 4.35%;
+    font-size: 3rem;
+    color: white;
+    display: none;
 }
 
 .navbar ul{
@@ -215,16 +228,26 @@
 @media screen and (max-width: 992px) {
     .hero_section{
         flex-direction: column;
+        align-items: start;
     }
-
+    
     .text_section{
+        margin-left: 12%;
         max-width: 700px;
     }
-}
 
-@media screen and (max-width: 950px) {
+    .image_section{
+        margin-left: 30%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .nev_section{
+        margin: 3rem 5%;
+    }
+
     .logo{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .navbar ul{
@@ -233,5 +256,190 @@
 
     .navbar ul li a{
         font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nev_section{
+        margin: 3rem 3%;
+    }
+
+    .logo{
+        font-size: 2rem;
+    }
+
+    .navbar ul{
+        gap: .5rem;
+    }
+
+    .text_section{
+        margin-left: 8%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar ul{
+        gap: .25rem;
+    }
+
+    .navbar ul li a{
+        font-size: .8rem;
+    }
+
+    .logo{
+        font-size: 1.75rem;
+    }
+
+    .text_section h1{
+        font-size: 4rem;
+    }
+
+    .text_section p{
+        font-size: .8rem;
+        letter-spacing: .1rem;
+        line-height: 1.5rem;
+    }
+
+    .image_section{
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .nev_section{
+        margin: 2.5rem 5%;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .menu_icon{
+        display: block;
+        margin-right: 5%;
+    }
+
+    .menu_icon a{
+        color: rgb(255, 255, 255);
+        font-size: 2.5rem;
+    }
+
+    .logo{
+        font-size: 3rem;
+    }
+
+    .text_section{
+        max-width: 400px;
+        margin-left: 8%;
+    }
+
+    .text_section h1{
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+
+    .text_section span{
+        font-size: 8rem;
+    }
+
+    .text_section p br{
+        display: none;
+    }
+
+    .image_section{
+        margin-left: 16%;
+    }
+
+    .box_1{
+        right: 3%;
+        top: 33%;
+    }
+
+    .text_section button{
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .logo{
+        font-size: 2.5rem;
+    }
+
+    .text_section{
+        max-width: 350pxd;
+        margin-left: 5%;
+    }
+
+    .text_section h1{
+        font-size: 2.9rem;
+        line-height: 3rem;
+    }
+
+    .text_section span{
+        font-size: 5.3rem;
+    }
+
+    .text_section p{
+        font-size: .7rem;
+        letter-spacing: .07rem;
+        line-height: 1.5rem;
+        margin-right: 10%;
+    }
+
+    .image_section{
+        margin-left: 10%;
+    }
+
+    .text_section button{
+        font-size: .9rem;
+        padding: .9rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .nev_section{
+        margin-left: 8%;
+    }
+
+    .logo{
+        font-size: 2rem;
+    }
+
+    .menu_icon{
+        top: 3%;
+    }
+
+    .menu_icon a{
+        font-size: 2rem;
+    }
+
+    .text_section{
+        margin-left: 8%;
+    }
+
+    .image_section img{
+        max-width: 300px;
+    }
+
+    .image_section{
+        margin: auto;
+    }
+
+    .box_1{
+        right: 16%;
+    }
+    
+    .box_2{
+        left: 10%;
+    }
+    
+    .text_section button{
+        font-size: .7rem;
+        padding: .8rem 1.4rem;
+    }
+
+    .text_section .btn_2{
+        margin-left: 4px;
     }
 }
