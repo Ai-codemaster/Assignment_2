@@ -208,6 +208,10 @@
     color: var(--text_2);
 }
 
+.box_2 .circle i{
+    display: none;
+}
+
 
 
 /* responsive part */
@@ -353,6 +357,21 @@
     .box_1{
         right: 3%;
         top: 33%;
+    }
+
+    /* .circle{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    } */
+
+    .box_2 .circle i{
+        display: block;
+        color: white;
+        font-size: 2rem;
+        position: absolute;
+        top: 26px;
+        left: 28px;
     }
 
     .text_section button{
