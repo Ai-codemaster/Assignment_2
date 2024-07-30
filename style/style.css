@@ -272,6 +272,58 @@ html{
 }
 
 
+/* Run an Extra Mile Easily Section */
+
+#run{
+    max-width: 1200px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    background: rgb(34, 34, 34);
+    border-radius: 1.125rem;
+}
+
+.run_text{
+    margin: 8%;
+    text-align: left;
+}
+
+.run_text h1{
+    font-size: 3rem;
+    font-weight: 900px;
+    color: var(--text_1);
+}
+
+.run_text p{
+    font-size: .8rem;
+    line-height: 1.4rem;
+    letter-spacing: .1rem;
+    font-weight: 400;
+    color: var(--text_2);
+    margin-top: 1.5rem;
+}
+
+.run_text button{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text_1);
+    background: var(--main_color);
+    padding: 1rem 3rem;
+    margin-top: 1.5rem;
+    border: 1px solid var(--main_color);
+    border-radius: 1.8rem;
+}
+
+.run_img{
+    margin: 8%;
+}
+
+.run_img img{
+    width: 100%;
+    border-radius: 1.125rem;
+}
 
 
 
