@@ -254,6 +254,7 @@ html{
 }
 
 .img_div div img{
+    border: 3px solid rgba(56, 56, 56, 0.3);
     border-radius: 50%;
 }
 
@@ -322,6 +323,7 @@ html{
 
 .run_img img{
     width: 100%;
+    height: 100%;
     border-radius: 1.125rem;
 }
 
@@ -347,6 +349,26 @@ html{
     .box_2{
         left: -5%;
         bottom: 11%;
+    }
+
+    #run{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .run_text h1{
+        font-size: 2.7rem;
+    }
+
+    .run_text p{
+        font-size: .7rem;
+        line-height: 1.2rem;
+    }
+
+    .run_text button{
+        font-size: 1rem;
     }
 }
 
@@ -397,6 +419,29 @@ html{
     .img_div div h3{
         margin-top: .7rem;
     }
+
+     .run_text{
+        margin: 5%;
+     }
+
+     .run_img{
+        margin: 5%;
+     }
+
+    .run_text h1{
+        font-size: 2.2rem;
+    }
+
+    .run_text p{
+        font-size: .6rem;
+        line-height: 1.1rem;
+    }
+
+    .run_text button{
+        font-size: .95rem;
+        padding: 1rem 2.8rem;
+        margin-top: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -437,6 +482,22 @@ html{
     .img_div div p{
         font-size: .77rem;
     }
+
+    .run_text h1{
+        font-size: 2rem;
+    }
+
+    .run_text p{
+        font-size: .55rem;
+        line-height: 1rem;
+        margin-top: .8rem;        
+    }
+
+    .run_text button{
+        font-size: .9rem;
+        padding: .9rem 2.8rem;
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -464,6 +525,22 @@ html{
 
     .image_section{
         margin-left: 25%;
+    }
+
+    .run_text h1{
+        font-size: 1.5rem;
+    }
+
+    .run_text p{
+        font-size: .55rem;
+        line-height: .8rem;
+        margin-top: .8rem;        
+    }
+
+    .run_text button{
+        font-size: .9rem;
+        padding: .8rem 2.5rem;
+        margin-top: .8rem;
     }
 }
 
@@ -545,6 +622,27 @@ html{
 
     .img_div{
         grid-template-columns: 1fr;
+    }
+
+    #run{
+        margin-top: 50px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .run_text h1{
+        font-size: 2.45rem;
+    }
+
+    .run_text p{
+        font-size: .65rem;
+        margin-top: 1.5rem;
+        line-height: 1.2rem;
+    }
+
+    .run_text button{
+        font-size: 1.25rem;
+        padding: 1rem 3rem;
+        margin-top: 1.5rem;
     }
 }
 
