@@ -622,6 +622,7 @@ html{
     color: var(--text_1);
     border: 1px solid var(--main_color);
     border-radius: 2.5rem;
+    cursor: pointer;
 }
 
 /* Meet Our Team */
@@ -732,12 +733,81 @@ html{
     bottom: 6%;
 }
 
+/* footer section */
 
+#footer{
+    width: 100%;
+    height: auto;
+    background: var(--text_3);
+    margin-top: 90px;
+}
 
+.footer_text{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 4.125rem;
+    padding-bottom: 4.125rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: start;
+}
 
+.footer_logo h1{
+    font-size: 4.4rem;
+    font-weight: 800;
+    color: var(--main_color);
+    margin-bottom: 1.1rem;
+}
 
+.footer_logo p{
+    color: var(--text_2);
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: .04rem;
+    line-height: 1.5rem;
+    margin-right: 10%;
+}
 
+.list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: start;
+}
 
+.footer hr{
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid var(--text_3);
+}
+
+.footer > p{
+    margin-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    text-align: center;
+    color: var(--text_2);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.04rem;
+}
+
+.list h2{
+    color: var(--text_1);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.list ul li{
+    margin: 1.2rem 0;
+}
+
+.list ul li a{
+    color: var(--text_2);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
 
 
 
@@ -769,6 +839,11 @@ html{
     #trainer{
         margin-left: 3%;
         margin-right: 3%;
+    }
+
+    .footer_text{
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 
@@ -876,6 +951,11 @@ html{
     .calc_your_bmi{
         margin-left: 5%;
     }
+
+    .footer_text{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8%;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -940,6 +1020,26 @@ html{
 
     .trainer_7 h3{
         font-size: 1rem;
+    }
+
+    .footer_logo h1{
+        font-size: 4rem;
+    }
+
+    .footer_logo p{
+        font-size: .7rem;
+    }
+
+    .list h2{
+        font-size: 1.7rem;
+    }
+
+    .list ul li a{
+        font-size: 1rem;
+    }
+
+    .footer > p{
+        font-size: .9rem;
     }
 }
 
@@ -1154,8 +1254,25 @@ html{
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .trainer_7{
-        height: 300px;
+    .list{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5%;
+    }
+
+    .footer_logo h1{
+        font-size: 3.5rem;
+    }
+
+    .list h2{
+        font-size: 1.5rem;
+    }
+
+    .list ul li a{
+        font-size: .9rem;
+    }
+
+    .footer > p{
+        font-size: .8rem;
     }
 }
 
