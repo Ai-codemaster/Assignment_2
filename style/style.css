@@ -104,6 +104,7 @@ html{
 .text_section span{
     font-family: 'Ballet', cursive;
     font-size: 9rem;
+    color: var(--main_color);
 }
 
 .text_section p{
@@ -733,6 +734,84 @@ html{
     bottom: 6%;
 }
 
+/* Why chose us */
+
+#chose{
+    max-width: 1200px;
+    height: auto;
+    margin: 100px auto 0;
+}
+
+.chose_text h2{
+    font-size: 2rem;
+    color: var(--main_color);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.chose_text h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--text_1);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.chose_thing{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.ct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ct div{
+    width: 100px;
+    height: 100px;
+    background: var(--text_3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.ct div:hover{
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.ct div img{
+    width: 50px;
+    height: 50px;
+}
+
+.ct h3{
+    color: var(--text_1);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: .04rem;
+    margin-bottom: 1rem;
+}
+
+.ct p{
+    color: var(--text_2);
+    font-size: .8rem;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+    letter-spacing: .04rem;
+    line-height: 1rem;
+}
+
+
+
 /* footer section */
 
 #footer{
@@ -812,6 +891,7 @@ html{
 
 
 
+
 /* responsive part */
 
 @media screen and (max-width: 1300px) {
@@ -845,6 +925,11 @@ html{
         margin-left: 5%;
         margin-right: 5%;
     }
+
+    #chose{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
 @media screen and (max-width:1150px) {
@@ -869,7 +954,23 @@ html{
 @media screen and (max-width: 1150px) and (min-width: 993px) {
     .bmi_chart{
         margin-left: 4%;
-    } 
+    }
+
+    .ct h3{
+        font-size: .98rem;
+    }
+
+    .chose_text h2{
+        font-size: 1.8rem;
+    }
+
+    .chose_text h1{
+        font-size: 2.5rem;
+    }
+
+    .ct p{
+        font-size: .7rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -956,6 +1057,25 @@ html{
         grid-template-columns: repeat(1, 1fr);
         gap: 8%;
     }
+
+    .chose_thing{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10%;
+    }
+
+    .chose_text h2{
+        font-size: 1.9rem;
+    }
+
+    .chose_text h1{
+        font-size: 2.7rem;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    .ct p{
+        font-size: .7rem;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -1041,6 +1161,20 @@ html{
     .footer > p{
         font-size: .9rem;
     }
+
+    .chose_text h2{
+        font-size: 1.5rem;
+    }
+
+    .chose_text h1{
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    .ct p{
+        font-size: .83rem;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -1122,6 +1256,18 @@ html{
         font-size: .9rem;
         padding: .8rem 2.5rem;
         margin-top: .8rem;
+    }
+
+    .chose_text h2{
+        font-size: 1.3rem;
+    }
+
+    .chose_text h1{
+        font-size: 2rem;
+    }
+
+    .ct p{
+        font-size: .7rem;
     }
 }
 
@@ -1275,6 +1421,18 @@ html{
         font-size: .8rem;
         margin-left: 5%;
         margin-right: 5%;
+    }
+
+    #chose{
+        height: 1100px;
+    }
+
+    .chose_thing{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .chose_text h1{
+        font-size: 1.7rem;
     }
 }
 
