@@ -810,7 +810,92 @@ html{
     line-height: 1rem;
 }
 
+/*  Our Plan */
 
+#plan{
+    max-width: 1200px;
+    margin: 100px auto 0;
+}
+
+.plan_text h2{
+    color: var(--main_color);
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.plan_text h1{
+    color: var(--text_1);
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.plan_div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+}
+
+.pd{
+    border: 1px solid var(--text_3);
+    transform: skewY(-4deg);
+    text-align: center;
+    padding: 5%;
+}
+
+.pd:hover{
+    background: black;
+}
+
+.pd .pd_text{
+    transform: skewY(4deg);
+}
+
+.pd_text h3{
+    color: var(--text_1);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: .5rem auto 1rem;
+}
+
+.pd_text span{
+    color: var(--main_color);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.pd_text h4{
+    color: var(--text_1);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.pd_text pre{
+    color: var(--text_2);
+    font-size: .9rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.pd_text button{
+    color: var(--text_1);
+    background: var(--main_color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .7rem 2.5rem;
+    border: 2px solid var(--main_color);
+    cursor: pointer;
+}
+
+.pd_text button:hover{
+    color: var(--text_2);
+}
 
 /* footer section */
 
@@ -927,6 +1012,11 @@ html{
     }
 
     #chose{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #plan{
         margin-left: 5%;
         margin-right: 5%;
     }
@@ -1070,6 +1160,27 @@ html{
     .chose_text h1{
         font-size: 2.7rem;
     }
+
+    .pd_text h3{
+        font-size: 1.3rem;
+    }
+
+    .pd_text span{
+        font-size: 2.5rem;
+    }
+
+    .pd_text h4{
+        font-size: 1rem;
+    }
+
+    .pd_text pre{
+        font-size: .8rem;
+    }
+
+    .pd_text button{
+        font-size: 1rem;
+        padding: .7rem 2rem;
+    }
 }
 
 @media screen and (max-width: 855px) {
@@ -1168,6 +1279,40 @@ html{
 
     .chose_text h1{
         font-size: 2.3rem;
+    }
+
+    .plan_text h2{
+        font-size: 1.5rem;
+    }
+
+    .plan_text h1{
+        font-size: 2.5rem;
+    }
+
+    .plan_div{
+        gap: 2%;
+    }
+
+    .pd_text h3{
+        font-size: 1rem;
+    }
+
+    .pd_text span{
+        font-size: 2.2rem;
+    }
+
+    .pd_text h4{
+        font-size: .9rem;
+    }
+
+    .pd_text pre{
+        font-size: .7rem;
+    }
+
+    .pd_text button{
+        font-size: .8rem;
+        padding: .7rem 1.5rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -1433,6 +1578,45 @@ html{
 
     .chose_text h1{
         font-size: 1.7rem;
+    }
+
+    .plan_text h2{
+        font-size: 1.2rem;
+    }
+
+    .plan_text h1{
+        font-size: 2rem;
+    }
+
+    .plan_div{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3%;
+    }
+
+    .pd_text h3{
+        font-size: 1.5rem;
+    }
+
+    .pd_text span{
+        font-size: 3rem;
+    }
+
+    .pd_text h4{
+        font-size: 1.1rem;
+    }
+
+    .pd_text pre{
+        font-size: .9rem;
+    }
+
+    .pd_text button{
+        font-size: 1rem;
+        padding: .7rem 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .pd_margin{
+        margin-bottom: 5rem  ;
     }
 }
 
